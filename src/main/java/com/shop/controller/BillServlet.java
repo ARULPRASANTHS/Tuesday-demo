@@ -1,12 +1,16 @@
 package com.shop.controller;
 
-import com.shop.dao.*;
-import com.shop.model.*;
-import java.io.IOException;
-import java.sql.SQLException;
+import com.shop.dao.BillDAO;
+import com.shop.dao.BookDAO;
+import com.shop.model.Bill;
+import com.shop.model.Book;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.*;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.sql.SQLException;
 
 @WebServlet("/bills")
 public class BillServlet extends HttpServlet {

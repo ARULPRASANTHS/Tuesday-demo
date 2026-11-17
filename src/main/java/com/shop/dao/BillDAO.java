@@ -3,7 +3,17 @@ package com.shop.dao;
 import com.shop.model.Bill;
 import com.shop.util.DBConnection;
 import java.sql.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+//import com.shop.util.Bill;
+import com.shop.util.DBConnection;
 
 public class BillDAO {
     private static final String SELECT =

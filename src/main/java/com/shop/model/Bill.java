@@ -1,12 +1,14 @@
 package com.shop.model;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
 public class Bill {
     private int id, bookId, quantity;
     private String customerName, bookTitle;
     private double total;
-    private Timestamp billDate;
+    private Date billDate;
+
+    public Bill() {}
 
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
@@ -20,6 +22,6 @@ public class Bill {
     public void setBookTitle(String bookTitle) { this.bookTitle = bookTitle; }
     public double getTotal() { return total; }
     public void setTotal(double total) { this.total = total; }
-    public Timestamp getBillDate() { return billDate; }
-    public void setBillDate(Timestamp billDate) { this.billDate = billDate; }
+    public Date getBillDate() { return billDate; }
+    public void setBillDate(Date billDate) { this.billDate = billDate; }
 }
